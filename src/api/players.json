@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "nick": "CD",
+        "name": "Carlos",
+        "kill": 0,
+        "death": 0,
+        "assist": 0,
+        "round": 0
+    },
+    {
+        "id": 2,
+        "nick": "Eu",
+        "name": "Kira",
+        "kill": 0,
+        "death": 0,
+        "assist": 0,
+        "round": 0
+    },
+    {
+        "id": 3,
+        "nick": "Chovy",
+        "name": "Heitor",
+        "kill": 0,
+        "death": 0,
+        "assist": 0,
+        "round": 0
+    },
+    {
+        "id": 4,
+        "nick": "KatchaunGatinha",
+        "name": "Diogo",
+        "kill": 0,
+        "death": 0,
+        "assist": 0,
+        "round": 0
+    },
+    {
+        "id": 5,
+        "nick": "BloodFlare",
+        "name": "Ale",
+        "kill": 0,
+        "death": 0,
+        "assist": 0,
+        "round": 0
+    }
+]
