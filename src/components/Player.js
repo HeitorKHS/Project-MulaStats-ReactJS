@@ -48,27 +48,27 @@ export default function Player()
                                 <div className="grid grid-rows-6 gap-5 pl-10 border-l border-gray-500">
                                     <div className="flex font-bold">
                                         <div className="text-[rgb(150,150,150)]">Matches played:</div>
-                                        <div className="text-[rgb(8,8,8)] pl-2">{user.match}</div>
+                                        <div className="text-white pl-2">{user.match}</div>
                                     </div>
                                     <div className="flex font-bold">
                                         <div className="text-[rgb(150,150,150)]">Rounds:</div>
-                                        <div className="text-[rgb(8,8,8)] pl-2">{user.round}</div>
+                                        <div className="text-white pl-2">{user.round}</div>
                                     </div>
                                     <div className="flex font-bold">
                                         <div className="text-[rgb(150,150,150)]">Kills:</div>
-                                        <div className="text-[rgb(8,8,8)] pl-2">{user.kill}</div>
+                                        <div className="text-white pl-2">{user.kill}</div>
                                     </div>
                                     <div className="flex font-bold">
                                         <div className="text-[rgb(150,150,150)]">Deaths:</div>
-                                        <div className="text-[rgb(8,8,8)] pl-2">{user.death}</div>
+                                        <div className="text-white pl-2">{user.death}</div>
                                     </div>
                                     <div className="flex font-bold">
                                         <div className="text-[rgb(150,150,150)]">Assists:</div>
-                                        <div className="text-[rgb(8,8,8)] pl-2">{user.assist}</div>
+                                        <div className="text-white pl-2">{user.assist}</div>
                                     </div>
                                     <div className="flex font-bold">
                                         <div className="text-[rgb(150,150,150)]">MVPs:</div>
-                                        <div className="text-[rgb(8,8,8)] pl-2">{user.mvp}</div>
+                                        <div className="text-white pl-2">{user.mvp}</div>
                                     </div>  
                                 </div>
                             </div>
