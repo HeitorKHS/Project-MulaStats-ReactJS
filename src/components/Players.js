@@ -5,16 +5,15 @@ import cs from "../assets/cs.png";
 import cs2 from "../assets/cs2-bg.png";
 
 
-export default function MinhasRotas()
+export default function Players()
 {
     return(
 
-        <div className="bg-black">
-
-            <div className=" flex flex-col mt-20">
+        <div className=" flex flex-col mt-5 items-center">
+            <h1 className="text-white text-[70px]">PLAYERS</h1>
             {
                     data.map((info) => (
-                        <Link key={info.id} to={`/player/${info.id}`} className="block w-3/4 h-[200px] m-auto mb-10">
+                        <Link key={info.id} to={`/player/${info.id}`} className="block w-3/4 h-[200px] mb-5">
                             <div className="flex w-full h-full border-[2px] border-[rgb(26,36,49)]"
                                 style={{
                                 backgroundImage: `url(${cs2})`,
@@ -40,8 +39,6 @@ export default function MinhasRotas()
                 }
 
             </div>
-            
-        </div>
 
     )
 }

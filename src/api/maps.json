@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "name": "Ancient",
+        "played": 2,
+        "wins": 1,
+        "losses": 1,
+        "draws": 0,
+        "rounds":34,
+        "img": "/maps/ancient.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Anubis",
+        "played": 0,
+        "wins": 0,
+        "losses": 0,
+        "draws": 0,
+        "rounds":0,
+        "img": "/maps/anubis.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Dust 2",
+        "played": 0,
+        "wins": 0,
+        "losses": 0,
+        "draws": 0,
+        "rounds":0,
+        "img": "/maps/dust2.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Inferno",
+        "played": 0,
+        "wins": 0,
+        "losses": 0,
+        "draws": 0,
+        "rounds": 0,
+        "img": "/maps/inferno.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Mirage",
+        "played": 1,
+        "wins": 0,
+        "losses": 1,
+        "draws": 0,
+        "rounds":18,
+        "img": "/maps/mirage.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Nuke",
+        "played": 1,
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "rounds":24,
+        "img": "/maps/nuke.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Overpass",
+        "played": 0,
+        "wins": 0,
+        "losses": 0,
+        "draws": 0,
+        "rounds":0,
+        "img": "/maps/overpass.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Office",
+        "played": 0,
+        "wins": 0,
+        "losses": 0,
+        "draws": 0,
+        "rounds":0,
+        "img": "/maps/office.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Vertigo",
+        "played": 1,
+        "wins": 1,
+        "losses": 0,
+        "draws": 0,
+        "rounds":18,
+        "img": "/maps/vertigo.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Thera",
+        "played": 0,
+        "wins": 0,
+        "losses": 0,
+        "draws": 0,
+        "rounds":0,
+        "img": "/maps/thera.jfif"
+    },
+    {
+        "id": 11,
+        "name": "Mills",
+        "played": 0,
+        "wins": 0,
+        "losses": 0,
+        "draws": 0,
+        "rounds":0,
+        "img": "/maps/mills.jpg"
+    }
+]

@@ -2,7 +2,7 @@ import mula from "../assets/mula.png";
 
 import Nav from "../components/Nav";
 
-export default function MinhasRotas()
+export default function Home()
 {
     return(
 

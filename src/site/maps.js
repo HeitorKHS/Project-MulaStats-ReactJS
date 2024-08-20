@@ -1,14 +1,14 @@
 import Nav from "../components/Nav";
-import PlayersCard from "../components/Players";
+import MapsInfo from "../components/Maps";
 
-export default function Players()
+export default function Maps()
 {
     return(
 
         <div className="bg-black">
 
             <Nav/>
-            <PlayersCard/>
+            <MapsInfo/>
              
         </div>
 

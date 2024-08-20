@@ -1,27 +1,14 @@
 import Nav from "../components/Nav";
+import Player from "../components/Player";
 
-export default function MinhasRotas()
+export default function player()
 {
-    return (
 
-        <div className="h-screen bg-black">
-            <Nav/>
-            <div className="h-200px">
-            <h1 className="text-white text-[200px]">Quase lá</h1>
+    return (
+            <div className="h-screen bg-black">
+                <Nav/>
+                <Player/>
             </div>
-            <div className="h-200px">
-            <h1 className="text-white text-[200px]">Quase lá</h1>
-            </div>
-            <div className="h-200px">
-            <h1 className="text-white text-[200px]">Quase lá</h1>
-            </div>
-            <div className="h-200px">
-            <h1 className="text-white text-[200px]">Quase lá</h1>
-            </div>
-            <div className="h-200px">
-            <h1 className="text-white text-[200px]">Quase lá</h1>
-            </div>
-        </div>
 
     );
 }

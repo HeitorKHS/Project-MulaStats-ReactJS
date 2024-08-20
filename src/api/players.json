@@ -3,45 +3,60 @@
         "id": 1,
         "nick": "CD",
         "name": "Carlos",
-        "kill": 0,
-        "death": 0,
-        "assist": 0,
-        "round": 0
+        "match": 5,
+        "kill": 35,
+        "death": 67,
+        "assist": 19,
+        "round": 94,
+        "mvp": 1,
+        "rating": []
     },
     {
         "id": 2,
         "nick": "Eu",
         "name": "Kira",
-        "kill": 0,
-        "death": 0,
-        "assist": 0,
-        "round": 0
+        "match": 5,
+        "kill": 101,
+        "death": 59,
+        "assist": 26,
+        "round": 94,
+        "mvp": 20,
+        "rating": []
     },
     {
         "id": 3,
         "nick": "Chovy",
         "name": "Heitor",
-        "kill": 0,
-        "death": 0,
-        "assist": 0,
-        "round": 0
+        "match": 5,
+        "kill": 30,
+        "death": 69,
+        "assist": 13,
+        "round": 94,
+        "mvp": 5,
+        "rating": []
     },
     {
         "id": 4,
-        "nick": "KatchaunGatinha",
+        "nick": "KatchauGatinha",
         "name": "Diogo",
-        "kill": 0,
-        "death": 0,
-        "assist": 0,
-        "round": 0
+        "match": 5,
+        "kill": 94,
+        "death": 65,
+        "assist": 25,
+        "round": 94,
+        "mvp": 17,
+        "rating": []
     },
     {
         "id": 5,
         "nick": "BloodFlare",
         "name": "Ale",
-        "kill": 0,
-        "death": 0,
-        "assist": 0,
-        "round": 0
+        "match": 5,
+        "kill": 50,
+        "death": 68,
+        "assist": 15,
+        "round": 94,
+        "mvp": 6,
+        "rating": []
     }
 ]
