@@ -15,11 +15,11 @@ export default function Player()
 
     return (
 
-            <div className="bg-black text-white mt-10">
+            <div className="bg-black text-white mt-10 px-4 sm:px-6 lg:px-8">
                 
-                <div className="w-2/3 m-auto bg-[rgb(43,52,61)] flex rounded-lg">
+                <div className="max-w-screen-lg mx-auto bg-[rgb(43,52,61)] flex rounded-lg">
                     <div className="p-5">
-                        <img src={player}></img>
+                        <img className="w-full h-auto object-cover" src={player}></img>
                     </div>
                     <div>
                         <div className="flex flex-col ml-5">
