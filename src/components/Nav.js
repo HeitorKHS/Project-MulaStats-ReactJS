@@ -1,16 +1,20 @@
-import logo from "../assets/logo.png";
+import Logo from "../assets/logo.png";
+import Capacete from "../assets/capacete.png";
 
-export default function Nav() {
-  return (
-    <nav className="grid grid-cols-3 items-center bg-[rgb(17,17,17)] text-white text-xl">
-        <ul className="flex space-x-7 justify-end col-start-1 ">
-          <li><a href="/">Home</a></li>
-          <li><a href="/Players">Players</a></li>
-          <li><a href="/maps">Map Pool</a></li>
-        </ul>
-        <div className="flex-1 flex justify-center">
-        <img className="flex justify-center col-start-2" src={logo}></img>
-        </div>
-    </nav>
-  )
+export default function Nav()
+{
+    return(
+
+        <nav className="max-w-screen md:grid md:grid-cols-3 bg-[rgb(17,17,17)] items-center text-white  text-sm md:text-xl">
+            
+            <ul className="flex justify-center md:justify-end items-center space-x-3 md:space-x-7 md:col-start-1">
+                <img src={Capacete} className="block md:hidden w-[40px] h-[30px]"></img>
+                <li><a href="/">Home</a></li>
+                <li><a href="/players">Players</a></li>
+                <li><a href="/maps">Map Pool</a></li>
+            </ul>
+            <img src={Logo} className="mx-auto hidden md:block col-start-2"></img>
+        </nav>
+        
+    )
 }

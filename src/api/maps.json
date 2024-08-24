@@ -12,11 +12,11 @@
     {
         "id": 2,
         "name": "Anubis",
-        "played": 0,
+        "played": 1,
         "wins": 0,
-        "losses": 0,
+        "losses": 1,
         "draws": 0,
-        "rounds":0,
+        "rounds": 20,
         "img": "/maps/anubis.jpg"
     },
     {
@@ -32,11 +32,11 @@
     {
         "id": 4,
         "name": "Inferno",
-        "played": 0,
+        "played": 1,
         "wins": 0,
-        "losses": 0,
+        "losses": 1,
         "draws": 0,
-        "rounds": 0,
+        "rounds": 18,
         "img": "/maps/inferno.jpg"
     },
     {
@@ -46,7 +46,7 @@
         "wins": 0,
         "losses": 1,
         "draws": 0,
-        "rounds":18,
+        "rounds": 18,
         "img": "/maps/mirage.jpg"
     },
     {
@@ -62,11 +62,11 @@
     {
         "id": 7,
         "name": "Vertigo",
-        "played": 1,
+        "played": 2,
         "wins": 1,
-        "losses": 0,
+        "losses": 1,
         "draws": 0,
-        "rounds":18,
+        "rounds":41,
         "img": "/maps/vertigo.jpg"
     }
 ]

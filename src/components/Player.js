@@ -1,84 +1,82 @@
 import { useParams } from 'react-router-dom';
-import player from "../assets/player-cut.png";
-import data from '../api/players.json';
+import PhotoPlayer from "../assets/player.png";
+import Data from '../api/players.json';
 import {getColorRating, getColorApr, getColorDpr, getColorKpr} from '../utils/colorUtils';
 
 export default function Player()
 {
 
     const { id } = useParams();
-    const user = data.find(user => user.id ===  Number(id)); 
-    const colorRating = getColorRating((user.kill/user.death).toFixed(2));
-    const colorApr = getColorApr((user.assist/user.round).toFixed(2));
-    const colorDpr = getColorDpr((user.death/user.round).toFixed(2));
-    const colorKpr = getColorKpr((user.kill/user.round).toFixed(2));
+    const player = Data.find(player => player.id ===  Number(id));
+    const colorRating = getColorRating((player.kill/player.death).toFixed(2));
+    const colorApr = getColorApr((player.assist/player.round).toFixed(2));
+    const colorDpr = getColorDpr((player.death/player.round).toFixed(2));
+    const colorKpr = getColorKpr((player.kill/player.round).toFixed(2));
 
-    return (
+    return(
 
-            <div className="bg-black text-white mt-10 px-4 sm:px-6 lg:px-8">
-                
-                <div className="max-w-screen-lg mx-auto bg-[rgb(43,52,61)] flex rounded-lg">
-                    <div className="p-5">
-                        <img className="w-full h-auto object-cover" src={player}></img>
+        <div className="flex flex-grow bg-black items-center justify-center text-white">
+            <div className="flex m-10 gap-5">
+                <div className="hidden md:flex bg-[rgb(12,12,12)] p-8 rounded-xl">
+                    <div className="flex bg-black rounded">
+                        <img className="object-cover" src={PhotoPlayer} /> 
+                    </div>                
+                </div>
+                <div className="flex flex-col bg-[rgb(12,12,12)] rounded-xl gap-10 p-5">
+                    <div>
+                        <h1 className="text-[rgb(180,183,186)] text-sm md:text-4xl">{player.name}<span className="text-sm md:text-5xl text-white font-bold"> {player.nick}</span></h1>
                     </div>
                     <div>
-                        <div className="flex flex-col ml-5">
+                        <div className="flex gap-10 mb-10">
                             <div>
-                                <h1 className="text-[rgb(180,183,186)] text-[30px]">{user.name} <span className="text-[40px] text-white font-bold">{user.nick}</span></h1>
+                                <h1 className="text-sm md:text-lg text-[rgb(180,183,186)]">Rating</h1>
+                                <p className={`text-sm md:text-4xl font-bold ${colorRating}`}>{(player.kill/player.death).toFixed(2)}</p>
                             </div>
-                            <div className="flex mt-10">
-                                <div className="grid grid-cols-2 gap-x-20 mr-10">
-                                    <div>
-                                        <h1 className="text-blue-300 text-[20px]">Rating</h1>
-                                        <p className={`text-[40px] font-bold ${colorRating}`}>{(user.kill/user.death).toFixed(2)}</p>
-                                    </div>
-                                    <div>
-                                        <h1 className="text-blue-300 text-[20px]">KPR</h1>
-                                        <p className={`text-[40px] font-bold ${colorKpr}`}>{(user.kill/user.round).toFixed(2)}</p>
-                                    </div>
-                                    <div>
-                                        <h1 className="text-blue-300 text-[20px]">APR</h1>
-                                        <p className={`text-[40px] font-bold ${colorApr}`}>{(user.assist/user.round).toFixed(2)}</p>
-                                    </div>
-                                    <div>
-                                        <h1 className="text-blue-300 text-[20px]">DPR</h1>
-                                        <p className={`text-[40px] font-bold ${colorDpr}`}>{(user.death/user.round).toFixed(2)}</p>
-                                    </div>   
-                                </div>
-                                <div className="grid grid-rows-6 gap-5 pl-10 border-l border-gray-500">
-                                    <div className="flex font-bold">
-                                        <div className="text-[rgb(150,150,150)]">Matches played:</div>
-                                        <div className="text-white pl-2">{user.match}</div>
-                                    </div>
-                                    <div className="flex font-bold">
-                                        <div className="text-[rgb(150,150,150)]">Rounds:</div>
-                                        <div className="text-white pl-2">{user.round}</div>
-                                    </div>
-                                    <div className="flex font-bold">
-                                        <div className="text-[rgb(150,150,150)]">Kills:</div>
-                                        <div className="text-white pl-2">{user.kill}</div>
-                                    </div>
-                                    <div className="flex font-bold">
-                                        <div className="text-[rgb(150,150,150)]">Deaths:</div>
-                                        <div className="text-white pl-2">{user.death}</div>
-                                    </div>
-                                    <div className="flex font-bold">
-                                        <div className="text-[rgb(150,150,150)]">Assists:</div>
-                                        <div className="text-white pl-2">{user.assist}</div>
-                                    </div>
-                                    <div className="flex font-bold">
-                                        <div className="text-[rgb(150,150,150)]">MVPs:</div>
-                                        <div className="text-white pl-2">{user.mvp}</div>
-                                    </div>  
-                                </div>
+                            <div>
+                                <h1 className="text-sm md:text-lg text-[rgb(180,183,186)]">KPR</h1>
+                                <p className={`text-sm md:text-4xl font-bold ${colorKpr}`}>{(player.kill/player.round).toFixed(2)}</p>
                             </div>
-                        </div>        
+                        </div>
+                        <div className="flex gap-10">
+                            <div>
+                                <h1 className="text-sm md:text-lg text-[rgb(180,183,186)]">APR</h1>
+                                <p className={`text-sm md:text-4xl font-bold ${colorApr}`}>{(player.kill/player.round).toFixed(2)}</p>
+                            </div>
+                            <div>
+                                <h1 className="text-sm md:text-lg text-[rgb(180,183,186)]">DPR</h1>
+                                <p className={`text-sm md:text-4xl font-bold ${colorDpr}`}>{(player.kill/player.round).toFixed(2)}</p>
+                            </div>
+                        </div>
                     </div>
-
+                    <div className="flex flex-col md:flex-row gap-5">
+                        <div className="flex flex-col justify-center items-center bg-[rgb(28,28,28)] md:h-[100px] md:w-[100px] rounded-xl">
+                            <h1 className="text-sm md:text-[rgb(179,179,179)]">Matches</h1>
+                            <p className="text-sm md:text-2xl font-bold">{player.match}</p>
+                        </div>
+                        <div className="flex flex-col justify-center items-center bg-[rgb(28,28,28)] md:w-[100px] rounded-xl">
+                            <h1 className="text-sm md:text-[rgb(179,179,179)]">Rounds</h1>
+                            <p className="text-sm md:text-2xl font-bold">{player.round}</p>
+                        </div>
+                        <div className="flex flex-col justify-center items-center bg-[rgb(28,28,28)]  md:w-[100px] rounded-xl">
+                            <h1 className="text-sm md:text-[rgb(179,179,179)]">Kills</h1>
+                            <p className="text-sm md:text-2xl font-bold">{player.kill}</p>
+                        </div>
+                        <div className="flex flex-col justify-center items-center bg-[rgb(28,28,28)] md:w-[100px] rounded-xl">
+                            <h1 className="text-sm md:text-[rgb(179,179,179)]">Deaths</h1>
+                            <p className="text-sm md:text-2xl font-bold">{player.death}</p>
+                        </div>
+                        <div className="flex flex-col justify-center items-center bg-[rgb(28,28,28)] md:w-[100px] rounded-xl">
+                            <h1 className="text-sm md:text-[rgb(179,179,179)]">Assists</h1>
+                            <p className="text-sm md:text-2xl font-bold">{player.assist}</p>
+                        </div>
+                        <div className="flex flex-col justify-center items-center bg-[rgb(28,28,28)] md:w-[100px] rounded-xl">
+                            <h1 className="text-sm md:text-[rgb(179,179,179)]">MVPs</h1>
+                            <p className="text-sm md:text-2xl font-bold">{player.mvp}</p>
+                        </div>
+                    </div>
                 </div>
-                
             </div>
-      
-
-    );
+        </div>
+          
+    )
 }

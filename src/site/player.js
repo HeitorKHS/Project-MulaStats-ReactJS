@@ -1,14 +1,14 @@
 import Nav from "../components/Nav";
-import Player from "../components/Player";
+import PlayerInfo from "../components/Player";
 
-export default function player()
+export default function Player()
 {
+    return(
 
-    return (
-            <div className="h-screen bg-black">
-                <Nav/>
-                <Player/>
-            </div>
+        <div className="flex flex-col h-screen">
+            <Nav/>
+            <PlayerInfo/>  
+        </div>
 
-    );
+    )
 }

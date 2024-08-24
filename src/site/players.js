@@ -1,15 +1,13 @@
 import Nav from "../components/Nav";
-import PlayersCard from "../components/Players";
+import ListPlayer from "../components/Players";
 
 export default function Players()
 {
     return(
 
-        <div className="bg-black">
-
+        <div className="flex flex-col h-screen">
             <Nav/>
-            <PlayersCard/>
-             
+            <ListPlayer/>
         </div>
 
     )
